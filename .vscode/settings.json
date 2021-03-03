@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": true
@@ -11,7 +10,3 @@
     }
   }
 }
-=======
-  "typescript.tsdk": "node_modules/typescript/lib"
-}
->>>>>>> origin/main
