@@ -26,3 +26,8 @@ yarn-error.log*
 .firebaserc
 firebase.json
 node_modules
+.vscode
+
+# css files
+*.css.map
+*.css
