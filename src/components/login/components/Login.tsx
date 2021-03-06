@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Button from './Button';
+import Button from '../../general/Button';
 
 const Login: React.FC = () => {
   return (
     <div>
-      <Button />
+      <Button text="Login" />
     </div>
   );
 };

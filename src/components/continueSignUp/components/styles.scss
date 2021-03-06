@@ -1,0 +1,35 @@
+.continue-sign-up {
+  max-width: 600px;
+  .header {
+    background: rgba(2, 88, 151, 1);
+    height: 4rem;
+    img {
+      margin: 2.5rem 0 0 0.5rem;
+    }
+  }
+  .form-text {
+    margin-top: 2rem;
+    max-width: 300px;
+  }
+
+  input,
+  select {
+    background: #f7fdff;
+    border-radius: 5px;
+    margin: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    min-width: 350px;
+  }
+  .radio {
+    margin: 3rem 0;
+
+    input {
+      border-radius: 20px;
+      height: 25px;
+      min-width: 250px;
+    }
+  }
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 
-import Button from './Button';
-
 const Home: React.FC = () => {
   return (
     <div>
-      <Button />
+      <a className="btn myBtn" href="/signup">
+        Sign Up
+      </a>
+      <a className="btn myBtn" href="/login">
+        Login
+      </a>
     </div>
   );
 };

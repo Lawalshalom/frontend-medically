@@ -1,4 +1,4 @@
 import Login from './Login';
-import './styles.scss';
+import './styles.css';
 
 export default Login;
