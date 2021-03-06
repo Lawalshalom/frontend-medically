@@ -1,26 +1,11 @@
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import { Home } from './views/home';
-import { Login } from "./views/login";
+import StoreProvider from "./context";
+import MainRouter from "./router";
 
-const App: React.FC = () => (
-  <Router>
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/register">
-        <Login />
-      </Route>
-      <Route path="/login">
-        <Login />
-      </Route>
-    </Switch>
-  </Router>
+const App = () => (
+  <StoreProvider>
+    <MainRouter />
+  </StoreProvider>
 );
 
 export default App;

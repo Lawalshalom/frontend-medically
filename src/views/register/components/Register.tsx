@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import { Typography } from 'antd';
 
 import logo from '../../../images/logo.png';
-import LoginForm from './RegisterationForm';
+import RegisterationForm from './RegisterationForm';
 
 const { Title } = Typography;
 
 const Wrapper = styled.div`
-  width: min(95vw, 500px);
-  padding-top: 100px;
+  width: min(85vw, 500px);
+  padding-top: 60px;
   margin: 1em auto;
 `;
 
@@ -25,11 +25,11 @@ const LogoWrapper = styled.div`
 const Register: FC = () => {
   return (
     <Wrapper>
-      <Title className="text-center text-primary" level={2}>Login</Title>
+      <Title className="text-center text-primary" level={2}>Sign Up</Title>
       <LogoWrapper>
         <img src={logo} alt="" />
       </LogoWrapper>
-      <LoginForm />
+      <RegisterationForm />
     </Wrapper>
   );
 };

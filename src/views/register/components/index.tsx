@@ -1,4 +1,4 @@
-import Login from './Login';
+import Register from './Register';
 import './styles.scss';
 
-export default Login;
+export default Register;

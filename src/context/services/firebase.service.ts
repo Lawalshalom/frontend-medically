@@ -4,9 +4,9 @@ import 'firebase/auth';
 
 class FirebaseService {
 
-  constructor() {
-    this.firebase.initializeApp(this.config);
-  }
+  // init() {
+  //   this.firebase.initializeApp(this.config);
+  // }
 
   private config = {
     apiKey: "AIzaSyATFbLdJalJk9VDKMgDZvPZ2f4GUDXtGpM",
@@ -17,8 +17,8 @@ class FirebaseService {
     appId: "1:696920671129:web:3c52d49278db2e081d0908"
   };
 
-  firebase = firebase;
-  private auth = this.firebase.auth();
+  firebase = firebase.initializeApp(this.config);
+  auth = this.firebase.auth();
 
   loginWithEmailAndPassword(email: string, password: string): Promise<firebase.auth.UserCredential> {
     return this.auth.signInWithEmailAndPassword(email, password);
@@ -30,11 +30,12 @@ class FirebaseService {
 
   loginWithSocialAccounts() { }
 
-  signUpWithEmailAndPassword() { }
+  signUpWithEmailAndPassword(email: string, password: string): Promise<firebase.auth.UserCredential> {
+    return this.auth.createUserWithEmailAndPassword(email, password);
+  }
 
   signUpWithSocialAccounts() { }
 }
 
-const firebaseServiceInstance = new FirebaseService();
-
-export default firebaseServiceInstance;
+const fireServiceInstance = new FirebaseService();
+export default fireServiceInstance;
