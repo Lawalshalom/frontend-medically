@@ -1,12 +1,26 @@
-import logo from './images/logo.svg';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { Home } from './views/home';
+import { Login } from "./views/login";
 
 const App: React.FC = () => (
-  <div className="coming-soon">
-    <img alt="" src={logo} />
-    <div>
-      COMING <span className="faded">SOON</span>{' '}
-    </div>
-  </div>
+  <Router>
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/register">
+        <Login />
+      </Route>
+      <Route path="/login">
+        <Login />
+      </Route>
+    </Switch>
+  </Router>
 );
 
 export default App;
