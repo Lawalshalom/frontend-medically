@@ -21,10 +21,11 @@ const FormGroupWrapper = styled.div`
   align-items: center;
   margin-bottom: 1.5em;
 
-  > input {
+  input {
     background-color: var(--primary-tint);
     border: 1px solid var(--primary-tint);
-    height: 50px
+    height: 50px;
+    font-size: 16px;
   }
 `;
 

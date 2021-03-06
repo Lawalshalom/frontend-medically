@@ -21,8 +21,9 @@ const FormGroupWrapper = styled.div`
   align-items: center;
   margin-bottom: 1.5em;
 
-  > input {
+  input {
     background-color: var(--primary-tint);
+    font-size: 16px;
   }
 
   .ant-input-affix-wrapper{

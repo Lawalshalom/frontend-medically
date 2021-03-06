@@ -8,8 +8,8 @@ import LoginForm from './LoginForm';
 const { Title } = Typography;
 
 const Wrapper = styled.div`
-  width: min(95vw, 500px);
-  padding-top: 100px;
+  width: min(85vw, 500px);
+  padding-top: min(10vw, 70px);
   margin: 1em auto;
 `;
 

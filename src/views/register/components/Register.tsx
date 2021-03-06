@@ -9,7 +9,8 @@ const { Title } = Typography;
 
 const Wrapper = styled.div`
   width: min(85vw, 500px);
-  padding-top: 60px;
+  padding-top: min(10vw, 70px);
+  padding-bottom: 100px;
   margin: 1em auto;
 `;
 

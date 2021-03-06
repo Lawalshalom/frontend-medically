@@ -2,9 +2,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 import Dashboard from "./views/dashboard";
-import { Home } from './views/home';
+// import { Home } from './views/home';
 import { Login } from "./views/login";
 import { Register } from "./views/register";
 
@@ -15,7 +16,7 @@ const MainRouter = () => {
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Home />
+          <Redirect to="/login" />
         </Route>
         <Route path="/register">
           <Register />
