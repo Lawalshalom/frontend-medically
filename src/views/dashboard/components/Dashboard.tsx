@@ -1,32 +1,25 @@
-import styled from 'styled-components';
-import { Button } from 'antd';
+import { Layout, } from 'antd';
 import { useHistory } from 'react-router';
-
-
-const Wrapper = styled.div`
-  display: grid;
-  height: 100vh;
-  place-items: center;
-
-  h3{
-    margin-bottom: 150px;
-  }
-`;
+import DashboardMenu from './DashboardMenu';
 
 const Dashboard = () => {
   const history = useHistory();
 
-  const logout = () => history.replace('/login');
-
   return (
-    <Wrapper>
-      <div>
-        <h3 className="text-primary text-bolder">Welcome to the Medicaly Dashboard</h3>
-        <p className="text-center mt-4">
-          <Button className="bg-primary" type="primary" onClick={logout}>Logout</Button>
-        </p>
-      </div>
-    </Wrapper>
+    <Layout>
+      <Layout.Sider
+        breakpoint="md"
+        collapsedWidth="0"
+        className="full-height bg_primary"
+      >
+        <DashboardMenu />
+      </Layout.Sider>
+      <Layout.Content
+        className="full-height"
+      >
+        content
+      </Layout.Content>
+    </Layout>
   )
 }
 
