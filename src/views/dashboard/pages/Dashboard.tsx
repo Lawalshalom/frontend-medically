@@ -1,6 +1,7 @@
 import { Layout, } from 'antd';
 import { useHistory } from 'react-router';
-import DashboardMenu from './DashboardMenu';
+import DashboardMenu from '../components/DashboardMenu';
+import DashboardRouter from '../dashboard-router';
 
 const Dashboard = () => {
   const history = useHistory();
@@ -17,7 +18,7 @@ const Dashboard = () => {
       <Layout.Content
         className="full-height"
       >
-        content
+        <DashboardRouter />
       </Layout.Content>
     </Layout>
   )
