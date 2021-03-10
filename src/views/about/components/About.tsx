@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Typography } from 'antd';
+import { strings } from '../../../shared/constants';
 
 import arrowLeft from '../../../images/arrow-left.png';
 
@@ -31,11 +32,11 @@ const TitleWrapper = styled.div`
 const About: FC = () => {
   return (
     <>
-      <TitleWrapper className="bg-primary">
-        <a href="/" className="text-left">
-          <img src={arrowLeft} alt="go to home" /> Back
+      <TitleWrapper className={strings.bgPrimary}>
+        <a href="/" className={strings.textLeft}>
+          <img src={arrowLeft} alt="" /> Back
         </a>
-        <Title className="text-center mt-3" level={3}>
+        <Title className={strings.textCenter + ' ' + strings.mt3} level={3}>
           About Medically
         </Title>
       </TitleWrapper>

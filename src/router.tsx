@@ -12,29 +12,31 @@ import { About } from './views/about';
 import { Terms } from './views/terms';
 import { Privacy } from './views/privacy';
 
+import { pathNames } from './constants';
+
 const MainRouter = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact>
-          <Redirect to="/login" />
+        <Route path={pathNames.home} exact>
+          <Redirect to={pathNames.login} />
         </Route>
-        <Route path="/register">
+        <Route path={pathNames.register}>
           <Register />
         </Route>
-        <Route path="/login">
+        <Route path={pathNames.login}>
           <Login />
         </Route>
-        <Route path="/dashboard">
+        <Route path={pathNames.dashboard}>
           <Dashboard />
         </Route>
-        <Route path="/about">
+        <Route path={pathNames.about}>
           <About />
         </Route>
-        <Route path="/terms">
+        <Route path={pathNames.terms}>
           <Terms />
         </Route>
-        <Route path="/privacy">
+        <Route path={pathNames.privacy}>
           <Privacy />
         </Route>
       </Switch>

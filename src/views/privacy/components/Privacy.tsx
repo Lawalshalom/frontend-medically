@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Typography, Button } from 'antd';
 
+import { strings } from '../../../shared/constants';
 const { Title } = Typography;
 
 const Wrapper = styled.div`
   width: min(85vw, 500px);
-  padding-top: min(10vw, 70px);
+  padding-top: min(10vw, 50px);
   margin: 1em auto;
 `;
 
@@ -20,7 +21,7 @@ const ButtonWrapper = styled.div`
 const Login: FC = () => {
   return (
     <Wrapper>
-      <Title className="text-left" level={3}>
+      <Title className={strings.textLeft} level={3}>
         Privacy Policy
       </Title>
       <p>
@@ -45,7 +46,11 @@ const Login: FC = () => {
         cursus augue lacus.
       </p>
       <ButtonWrapper>
-        <Button className="bg-primary mt-4" type="primary" block>
+        <Button
+          className={strings.bgPrimary + ' ' + strings.mt4}
+          type="primary"
+          block
+        >
           Agree
         </Button>
       </ButtonWrapper>

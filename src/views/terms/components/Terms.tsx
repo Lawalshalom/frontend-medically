@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Typography, Button } from 'antd';
+import { strings } from '../../../shared/constants';
 
 const { Title } = Typography;
 
@@ -21,7 +22,7 @@ const ButtonWrapper = styled.div`
 const Terms: FC = () => {
   return (
     <Wrapper>
-      <Title className="text-left" level={3}>
+      <Title className={strings.textLeft} level={3}>
         Terms of Service
       </Title>
       <p>
@@ -38,7 +39,7 @@ const Terms: FC = () => {
         etiam hendrerit urna duis. Blandit molestie adipiscing ipsum fringilla
         cursus augue lacus.
       </p>
-      <Title className="text-left" level={3}>
+      <Title className={strings.textLeft} level={3}>
         Authorized Users
       </Title>
       <p>
@@ -49,10 +50,14 @@ const Terms: FC = () => {
         cursus augue lacus.
       </p>
       <ButtonWrapper>
-        <Button className="bg-primary" type="primary" block>
+        <Button className={strings.bgPrimary} type="primary" block>
           I Agree
         </Button>
-        <Button className="text-primary ml-4" block type="ghost">
+        <Button
+          className={strings.textPrimary + ' ' + strings.ml4}
+          block
+          type="ghost"
+        >
           I Decline
         </Button>
       </ButtonWrapper>
