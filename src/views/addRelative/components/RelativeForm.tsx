@@ -7,7 +7,7 @@ import { Typography } from 'antd';
 import { Input, Checkbox, Button } from 'antd';
 import { strings } from '../../../shared/constants';
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 const Container = styled.div`
   margin-top: 30px;
