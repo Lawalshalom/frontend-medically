@@ -41,27 +41,9 @@ const About: FC = () => {
         </Title>
       </TitleWrapper>
       <Wrapper>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem
-          amet, pretium mauris. Consequat mollis interdum eget condimentum
-          faucibus viverra ullamcorper molestie. Maecenas nec odio metus
-          bibendum massa etiam hendrerit urna duis. Blandit molestie adipiscing
-          ipsum fringilla cursus augue lacus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem
-          amet, pretium mauris. Consequat mollis interdum eget condimentum
-          faucibus viverra ullamcorper molestie. Maecenas nec odio metus
-          bibendum massa etiam hendrerit urna duis. Blandit molestie adipiscing
-          ipsum fringilla cursus augue lacus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem
-          amet, pretium mauris. Consequat mollis interdum eget condimentum
-          faucibus viverra ullamcorper molestie. Maecenas nec odio metus
-          bibendum massa etiam hendrerit urna duis. Blandit molestie adipiscing
-          ipsum fringilla cursus augue lacus.
-        </p>
+        <p>{strings.lorem}</p>
+        <p>{strings.lorem}</p>
+        <p>{strings.lorem}</p>
       </Wrapper>
     </>
   );

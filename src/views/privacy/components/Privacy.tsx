@@ -24,27 +24,10 @@ const Login: FC = () => {
       <Title className={strings.textLeft} level={3}>
         Privacy Policy
       </Title>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem amet,
-        pretium mauris. Consequat mollis interdum eget condimentum faucibus
-        viverra ullamcorper molestie. Maecenas nec odio metus bibendum massa
-        etiam hendrerit urna duis. Blandit molestie adipiscing ipsum fringilla
-        cursus augue lacus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem amet,
-        pretium mauris. Consequat mollis interdum eget condimentum faucibus
-        viverra ullamcorper molestie. Maecenas nec odio metus bibendum massa
-        etiam hendrerit urna duis. Blandit molestie adipiscing ipsum fringilla
-        cursus augue lacus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lorem amet,
-        pretium mauris. Consequat mollis interdum eget condimentum faucibus
-        viverra ullamcorper molestie. Maecenas nec odio metus bibendum massa
-        etiam hendrerit urna duis. Blandit molestie adipiscing ipsum fringilla
-        cursus augue lacus.
-      </p>
+      <p>{strings.lorem}</p>
+      <p>{strings.lorem}</p>
+      <p>{strings.lorem}</p>
+
       <ButtonWrapper>
         <Button
           className={strings.bgPrimary + ' ' + strings.mt4}
