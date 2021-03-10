@@ -1,12 +1,11 @@
-import logo from './images/logo.svg';
 
-const App: React.FC = () => (
-  <div className="coming-soon">
-    <img alt="" src={logo} />
-    <div>
-      COMING <span className="faded">SOON</span>{' '}
-    </div>
-  </div>
+import StoreProvider from "./context";
+import MainRouter from "./router";
+
+const App = () => (
+  <StoreProvider>
+    <MainRouter />
+  </StoreProvider>
 );
 
 export default App;
