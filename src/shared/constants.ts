@@ -7,6 +7,7 @@ export const strings = {
   primary: 'primary',
   ghost: 'ghost',
   ml4: 'ml-4',
+  ml2: 'ml-2',
   mt3: 'mt-3',
   mt4: 'mt-4',
   lorem: `

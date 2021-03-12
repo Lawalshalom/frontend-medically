@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { Typography, Button } from 'antd';
 import { strings } from '../../../shared/constants';
+import DashboardMenu from '../../dashboard/components/DashboardMenu';
 
 const { Title } = Typography;
 
