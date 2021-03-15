@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import styled from 'styled-components';
 import { Typography, Button } from 'antd';
 
@@ -19,6 +19,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const Login: FC = () => {
+  const [showButton, setShowButton] = useState(true);
   return (
     <Wrapper>
       <Title className={strings.textLeft} level={3}>
@@ -28,15 +29,18 @@ const Login: FC = () => {
       <p>{strings.lorem}</p>
       <p>{strings.lorem}</p>
 
-      <ButtonWrapper>
-        <Button
-          className={strings.bgPrimary + ' ' + strings.mt4}
-          type="primary"
-          block
-        >
-          Agree
-        </Button>
-      </ButtonWrapper>
+      {showButton && (
+        <ButtonWrapper>
+          <Button
+            onClick={() => setShowButton(false)}
+            className={strings.bgPrimary + ' ' + strings.mt4}
+            type="primary"
+            block
+          >
+            Agree
+          </Button>
+        </ButtonWrapper>
+      )}
     </Wrapper>
   );
 };

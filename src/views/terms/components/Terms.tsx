@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import styled from 'styled-components';
 import { Typography, Button } from 'antd';
 import { strings } from '../../../shared/constants';
@@ -20,6 +20,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const Terms: FC = () => {
+  const [showButton, setShowButton] = useState(true);
   return (
     <Wrapper>
       <Title className={strings.textLeft} level={3}>
@@ -33,18 +34,25 @@ const Terms: FC = () => {
       </Title>
       <p>{strings.lorem}</p>
 
-      <ButtonWrapper>
-        <Button className={strings.bgPrimary} type="primary" block>
-          I Agree
-        </Button>
-        <Button
-          className={strings.textPrimary + ' ' + strings.ml4}
-          block
-          type="ghost"
-        >
-          I Decline
-        </Button>
-      </ButtonWrapper>
+      {showButton && (
+        <ButtonWrapper>
+          <Button
+            className={strings.bgPrimary}
+            type="primary"
+            block
+            onClick={() => setShowButton(false)}
+          >
+            I Agree
+          </Button>
+          <Button
+            className={strings.textPrimary + ' ' + strings.ml4}
+            block
+            type="ghost"
+          >
+            I Decline
+          </Button>
+        </ButtonWrapper>
+      )}
     </Wrapper>
   );
 };
