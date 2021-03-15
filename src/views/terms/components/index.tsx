@@ -1,4 +1,4 @@
-import Terms from './Terms';
+import TermsPage from './TermsPage';
 import './styles.scss';
 
-export default Terms;
+export default TermsPage;

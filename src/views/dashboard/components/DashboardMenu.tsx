@@ -3,10 +3,11 @@ import { ProfileFilled, InfoCircleOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 import logo from '../../../images/logo-white.png';
 import { FaUserCircle } from 'react-icons/fa';
-import { IoMdSettings, IoIosCall } from 'react-icons/io'
+import { IoMdSettings, IoIosCall } from 'react-icons/io';
 import { HiOutlineDocumentText } from 'react-icons/hi';
-import { MdLocalHospital } from 'react-icons/md'
+import { MdLocalHospital } from 'react-icons/md';
 import { GiHeartPlus } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 const Header = styled.div`
   color: white;
@@ -15,50 +16,47 @@ const Header = styled.div`
 `;
 
 const Logo = styled.img`
-  transform: scale(0.7)
+  transform: scale(0.7);
 `;
 
 const DashboardMenu = () => {
   return (
-    <Menu
-      theme="dark"
-      className="bg_primary"
-    >
+    <Menu theme="dark" className="bg_primary">
       <Header>
         <Logo src={logo} />
       </Header>
       <Menu.Item icon={<GiHeartPlus />}>
-        Quick Access
+        <Link to="/dashboard">Quick Access</Link>
       </Menu.Item>
       <Menu.Item icon={<HiOutlineDocumentText />}>
-        Blog
+        <Link to="/blog">Blog</Link>
       </Menu.Item>
       <Menu.Item icon={<MdLocalHospital />}>
-        Instant Consults
+        <Link to="/choose-subscription">Instant Consults</Link>
       </Menu.Item>
       <Menu.Item icon={<HiOutlineDocumentText />}>
-        Health History
+        <Link to="/history"></Link>Health History
       </Menu.Item>
       <Menu.Item icon={<IoMdSettings />}>
-        Settings
+        <Link to="/settings">Settings</Link>{' '}
       </Menu.Item>
       <Menu.Item icon={<FaUserCircle />}>
-        My Profile
+        <Link to="/profile"> My Profile</Link>
       </Menu.Item>
       <Menu.Item icon={<ProfileFilled />}>
-        Terms Of Service
+        <Link to="/terms">Terms Of Service</Link>{' '}
       </Menu.Item>
       <Menu.Item icon={<ProfileFilled />}>
-        Privacy Policy
+        <Link to="/privacy">Privacy Policy</Link>{' '}
       </Menu.Item>
       <Menu.Item icon={<IoIosCall />}>
-        Contact Us
+        <Link to="/contact">Contact Us</Link>{' '}
       </Menu.Item>
       <Menu.Item icon={<InfoCircleOutlined />}>
-        About Us
+        <Link to="/about">About Us</Link>{' '}
       </Menu.Item>
     </Menu>
   );
-}
+};
 
 export default DashboardMenu;

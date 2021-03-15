@@ -1,4 +1,4 @@
-import Privacy from './Privacy';
+import PrivacyPage from './PrivacyPage';
 import './styles.scss';
 
-export default Privacy;
+export default PrivacyPage;

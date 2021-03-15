@@ -1,4 +1,4 @@
-import About from './About';
+import AboutPage from './AboutPage';
 import './styles.scss';
 
-export default About;
+export default AboutPage;

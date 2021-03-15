@@ -1,5 +1,5 @@
-import ChooseSubscription from './ChooseSubscription';
+import ChooseSubscriptionPage from './ChooseSubscriptionPage';
 
 import './styles.scss';
 
-export default ChooseSubscription;
+export default ChooseSubscriptionPage;

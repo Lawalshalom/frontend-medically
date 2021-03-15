@@ -1,4 +1,4 @@
-import Contact from './Contact';
+import ContactPage from './ContactPage';
 import './styles.scss';
 
-export default Contact;
+export default ContactPage;

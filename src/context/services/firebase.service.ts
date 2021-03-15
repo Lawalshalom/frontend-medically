@@ -35,6 +35,10 @@ class FirebaseService {
   }
 
   signUpWithSocialAccounts() { }
+
+  logout(): Promise<void> {
+    return this.auth.signOut();
+  }
 }
 
 const fireServiceInstance = new FirebaseService();
