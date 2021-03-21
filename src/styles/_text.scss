@@ -1,0 +1,31 @@
+.text_primary {
+  color: var(--primary-color) !important;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_bolder {
+  font-weight: 700;
+}
+
+.text_bold {
+  font-weight: 900;
+}
+
+.text_capitalize {
+  text-transform: capitalize;
+}
+
+.text_white {
+  color: #fff !important;
+}

@@ -1,0 +1,13 @@
+.full-height {
+  min-height: 100vh;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}

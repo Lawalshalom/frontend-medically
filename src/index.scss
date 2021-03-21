@@ -1,6 +1,8 @@
-:root {
-  --primary-color: #025897;
-}
+@import './styles/colors';
+@import './styles/text';
+@import './styles/buttons';
+@import './styles/spacing';
+@import './styles/layouts';
 
 * {
   margin: 0;
@@ -15,28 +17,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fdfdfd;
-}
-
-.coming-soon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 1.8em;
-  letter-spacing: 0.6em;
-  font-weight: 700;
-}
-
-.coming-soon .faded {
-  opacity: 0.2;
-}
-
-@media screen and (max-width: 1000px) {
-  .coming-soon {
-    flex-direction: column;
-  }
 }

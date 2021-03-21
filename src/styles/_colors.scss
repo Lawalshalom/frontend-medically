@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #014679;
+  --primary-tint: #9FE7FF38;
+  --lightgrey: #E5E5E5;
+}
+
+.bg_primary {
+  background: var(--primary-color) !important;
+}
+
+.ant-layout-sider-zero-width-trigger {
+  background: var(--primary-color) !important;
+  color: #fff;
+}
